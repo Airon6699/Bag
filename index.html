@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAGROOM — Everyday Essentials</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg3fnr_CI1YEZZY_V9kMgDI6mTKIJqVWEF_pVUVCB61w&s=10">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo">BAGROOM<span>.</span></a>
+
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#products">Collection</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="head-actions">
+        <button id="search-btn">⌕</button>
+        <button id="fav-btn">♡ <span id="fav-count">0</span></button>
+        <button id="cart-btn" class="cart-btn">Bag <span id="cart-count">0</span></button>
+    </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">NEW SEASON / 2026</p>
+        <h1>Carry your<br><span>own story.</span></h1>
+        <p class="hero-desc">
+            Discover bags made for everyday adventures.
+            Practical details, thoughtful design and timeless style.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#products" class="main-btn">Explore collection ↗</a>
+            <a href="#about" class="text-btn">Discover BAGROOM</a>
+        </div>
+
+        <div class="hero-stats">
+            <div><strong>12+</strong><span>Unique products</span></div>
+            <div><strong>04</strong><span>Collections</span></div>
+            <div><strong>2026</strong><span>New season</span></div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="hero-bg"></div>
+        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=85" alt="Stylish backpack">
+        <div class="hero-card">
+            <span>FEATURED PRODUCT</span>
+            <h3>Urban Explorer</h3>
+            <p>$68.00</p>
+        </div>
+    </div>
+</section>
+
+<section class="benefits">
+    <div><span>✦</span> Everyday comfort</div>
+    <div><span>◈</span> Thoughtful design</div>
+    <div><span>✳</span> Functional details</div>
+    <div><span>↗</span> Made for movement</div>
+</section>
+
+<section class="products-section" id="products">
+    <div class="section-title">
+        <div>
+            <p class="eyebrow">OUR COLLECTION</p>
+            <h2>Find your <span>everyday bag.</span></h2>
+            <p>Designed to go wherever life takes you.</p>
+        </div>
+        <span class="total-products">12 PRODUCTS / 04 CATEGORIES</span>
+    </div>
+
+    <div class="shop-tools">
+        <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="backpacks">Backpacks</button>
+            <button class="filter" data-filter="bags">Bags</button>
+            <button class="filter" data-filter="accessories">Accessories</button>
+            <button class="filter" data-filter="travel">Travel</button>
+        </div>
+        <input id="search" type="text" placeholder="Search products...">
+    </div>
+
+    <div class="product-grid">
+
+        <article class="product" data-type="backpacks" data-name="Urban Explorer Backpack">
+            <div class="product-img">
+                <span class="tag">BESTSELLER</span>
+                <button class="product-fav" data-id="1">♡</button>
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=85" alt="Urban Explorer backpack">
+            </div>
+            <div class="product-info">
+                <div><h3>Urban Explorer</h3><span>01 / BACKPACK</span></div>
+                <strong>$68</strong>
+            </div>
+            <button class="add-btn" data-id="1" data-name="Urban Explorer" data-price="68">Add to bag +</button>
+        </article>
+
+        <article class="product" data-type="backpacks" data-name="Classic Canvas Backpack">
+            <div class="product-img">
+                <button class="product-fav" data-id="2">♡</button>
+                <img src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?auto=format&fit=crop&w=700&q=85" alt="Canvas backpack">
+            </div>
+            <div class="product-info">
+                <div><h3>Classic Canvas</h3><span>02 / BACKPACK</span></div>
+                <strong>$54</strong>
+            </div>
+            <button class="add-btn" data-id="2" data-name="Classic Canvas" data-price="54">Add to bag +</button>
+        </article>
+
+        <article class="product" data-type="backpacks" data-name="Forest Green Backpack">
+            <div class="product-img">
+                <span class="tag">NEW</span>
+                <button class="product-fav" data-id="3">♡</button>
+                <img src="https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=700&q=85" alt="Green backpack">
+            </div>
+            <div class="product-info">
+                <div><h3>Forest Green</h3><span>03 / BACKPACK</span></div>
+                <strong>$72</strong>
+            </div>
+            <button class="add-btn" data-id="3" data-name="Forest Green" data-price="72">Add to bag +</button>
+        </article>
+
+        <article class="product" data-type="backpacks" data-name="Minimal Daily Backpack">
+            <div class="product-img">
+                <button class="product-fav" data-id="4">♡</button>
+                <img src="https://images.unsplash.com/photo-1546938576-6e6a64f317cc?auto=format&fit=crop&w=700&q=85" alt="Minimal backpack">
+            </div>
+            <div class="product-info">
+                <div><h3>Minimal Daily</h3><span>04 / BACKPACK</span></div>
+                <strong>$59</strong>
+            </div>
+            <button class="add-btn" data-id="4" data-name="Minimal Daily" data-price="59">Add to bag +</button>
+        </article>
+
+        <article class="product" data-type="bags" data-name="Weekend Shoulder Bag">
+            <div class="product-img">
+                <span class="tag">POPULAR</span>
+                <button class="product-fav" data-id="5">♡</button>
+                <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=700&q=85" alt="Shoulder bag">
+            </div>
+            <div class="product-info">
+                <div><h3>Weekend Shoulder</h3><span>05 / BAG</span></div>
+                <strong>$45</strong>
+            </div>
+            <button class="add-btn" data-id="5" data-name="Weekend Shoulder" data-price="45">Add to bag +</button>
+        </article>
+
+        <article class="product" data-type="bags" data-name="Everyday Tote Bag">
+            <div class="product-img">
+                <button class="product-fav" data-id="6">♡</button>
+                <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=700&q=85" alt="Tote bag">
+            </div>
+            <div class="product-info">
+                <div><h3>Everyday Tote</h3><span>06 / BAG</span></div>
+                <strong>$38</strong>
+            </div>
+            <button class="add-btn" data-id="6" data-name="Everyday Tote" data-price="38">Add to bag +</button>
+        </article>
+
+        <article class="product" data-type="bags" data-name="City Crossbody Bag">
+            <div class="product-img">
+                <button class="product-fav" data-id="7">♡</button>
+                <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=700&q=85" alt="Crossbody bag">
+            </div>
+            <div class="product-info">
+                <div><h3>City Crossbody</h3><span>07 / BAG</span></div>
+                <strong>$42</strong>
+            </div>
+            <button class="add-btn" data-id="7" data-name="City Crossbody" data-price="42">Add to bag +</button>
+        </article>
+
+        <article class="product" data-type="bags" data-name="Soft Beige Handbag">
+            <div class="product-img">
+                <button class="product-fav" data-id="8">♡</button>
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=85" alt="Beige handbag">
+            </div>
+            <div class="product-info">
+                <div><h3>Soft Beige</h3><span>08 / BAG</span></div>
+                <strong>$56</strong>
+            </div>
+            <button class="add-btn" data-id="8" data-name="Soft Beige" data-price="56">Add to bag +</button>
+        </article>
+
+        <article class="product" data-type="travel" data-name="Travel Duffle Bag">
+            <div class="product-img">
+                <span class="tag">TRAVEL</span>
+                <button class="product-fav" data-id="9">♡</button>
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=85" alt="Travel bag">
+            </div>
+            <div class="product-info">
+                <div><h3>Travel Duffle</h3><span>09 / TRAVEL</span></div>
+                <strong>$85</strong>
+            </div>
+            <button class="add-btn" data-id="9" data-name="Travel Duffle" data-price="85">Add to bag +</button>
+        </article>
+
+        <article class="product" data-type="travel" data-name="Compact Travel Pouch">
+            <div class="product-img">
+                <button class="product-fav" data-id="10">♡</button>
+                <img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=700&q=85" alt="Travel pouch">
+            </div>
+            <div class="product-info">
+                <div><h3>Travel Pouch</h3><span>10 / TRAVEL</span></div>
+                <strong>$22</strong>
+            </div>
+            <button class="add-btn" data-id="10" data-name="Travel Pouch" data-price="22">Add to bag +</button>
+        </article>
+
+        <article class="product" data-type="accessories" data-name="Everyday Wallet">
+            <div class="product-img">
+                <button class="product-fav" data-id="11">♡</button>
+                <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=700&q=85" alt="Wallet">
+            </div>
+            <div class="product-info">
+                <div><h3>Everyday Wallet</h3><span>11 / ACCESSORY</span></div>
+                <strong>$25</strong>
+            </div>
+            <button class="add-btn" data-id="11" data-name="Everyday Wallet" data-price="25">Add to bag +</button>
+        </article>
+
+        <article class="product" data-type="accessories" data-name="Mini Key Pouch">
+            <div class="product-img">
+                <span class="tag">SMALL DETAIL</span>
+                <button class="product-fav" data-id="12">♡</button>
+                <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=700&q=85" alt="Small pouch">
+            </div>
+            <div class="product-info">
+                <div><h3>Mini Key Pouch</h3><span>12 / ACCESSORY</span></div>
+                <strong>$15</strong>
+            </div>
+            <button class="add-btn" data-id="12" data-name="Mini Key Pouch" data-price="15">Add to bag +</button>
+        </article>
+
+    </div>
+    <p class="empty-state" id="empty-state">No products found.</p>
+</section>
+
+<section class="about" id="about">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=85" alt="BAGROOM backpack">
+    </div>
+    <div class="about-text">
+        <p class="eyebrow">THE BAGROOM IDEA</p>
+        <h2>Carry less.<br><span>Live more.</span></h2>
+        <p>
+            Your bag is more than something you carry.
+            It is part of your daily routine, your travels
+            and the places you discover.
+        </p>
+        <p>
+            We focus on practical shapes, versatile colors
+            and thoughtful details that make every day easier.
+        </p>
+        <a href="#products" class="main-btn">View collection ↗</a>
+    </div>
+</section>
+
+<section class="quote">
+    <p class="eyebrow">BAGROOM PHILOSOPHY</p>
+    <h2>Ready for wherever<br><span>life takes you.</span></h2>
+    <p>EVERYDAY ESSENTIALS / EST. 2026</p>
+</section>
+
+<section class="contact" id="contact">
+    <div>
+        <p class="eyebrow">STAY CONNECTED</p>
+        <h2>Something good<br>is <span>coming.</span></h2>
+        <p>Get updates about new collections and releases.</p>
+    </div>
+    <form id="subscribe-form">
+        <input type="email" id="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe ↗</button>
+    </form>
+</section>
+
+</main>
+
+<footer class="footer">
+    <a href="#" class="logo">BAGROOM<span>.</span></a>
+    <p>Carry your own story.</p>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#products">Collection</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <span>© 2026 BAGROOM. ALL RIGHTS RESERVED.</span>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="cart-drawer">
+    <div class="drawer-head">
+        <h2>Your bag <span id="drawer-count">0</span></h2>
+        <button class="close-btn">×</button>
+    </div>
+    <div class="drawer-items" id="cart-items">
+        <p class="drawer-empty">Your bag is empty.</p>
+    </div>
+    <div class="drawer-bottom">
+        <div class="total"><span>Total</span><strong id="cart-total">$0</strong></div>
+        <button class="checkout-btn" id="checkout">Continue</button>
+    </div>
+</aside>
+
+<aside class="drawer" id="fav-drawer">
+    <div class="drawer-head">
+        <h2>Favorites <span id="fav-drawer-count">0</span></h2>
+        <button class="close-btn">×</button>
+    </div>
+    <div class="drawer-items" id="fav-items">
+        <p class="drawer-empty">No favorites yet.</p>
+    </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
